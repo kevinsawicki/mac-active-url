@@ -1,0 +1,11 @@
+{
+  "name": "mac-active-url",
+  "version": "0.0.0",
+  "description": "Get the URL of the document in the focused window (Mac only)",
+  "main": "index.js",
+  "author": "Kevin Sawicki",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.4.0"
+  }
+}
