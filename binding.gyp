@@ -14,11 +14,6 @@
             ]
           }
         }],
-        ['OS=="linux" or OS=="win"', {
-          "sources": [
-            "src/ActiveURL.cc",
-          ],
-        }],
       ]
     }
   ]
