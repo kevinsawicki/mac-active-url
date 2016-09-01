@@ -6,7 +6,7 @@
       "conditions": [
         ['OS=="mac"', {
           "sources": [
-            "src/ActiveURL.mm",
+            "ActiveURL.mm",
           ],
           "link_settings": {
             "libraries": [

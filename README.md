@@ -1,18 +1,24 @@
 # mac-active-url
 
-Get the URL of the document represented in the focused window.
+## getActiveURL(callback)
+
+Get the URL of the document represented in the focused window of the active
+application.
+
 
 ```js
-var getActiveUrl = require('mac-active-url').getActiveUrl
-console.log('Active URL', getActiveUrl())
+var getActiveURL = require('mac-active-url').getActiveURL
+getActiveURL(function (error, activeURL) {
+  console.log('Active URL', activeURL)
+})
 ```
 
-Test it out:
+## prompt()
+
+Prompt for access to the accessibility APIs if the process is not already
+trusted. This will show a pop-up confirm dialog if the process is not trusted:
 
 ```js
-var getActiveUrl = require('mac-active-url').getActiveUrl
-setInterval(function () {
-  console.log('Active URL', getActiveUrl())
-}, 1000)
-// Set this running then focus some windows such as the Preview app
+var alreadyTrusted = require('mac-active-url').prompt()
+console.log('Previous trusted', alreadyTrusted)
 ```
