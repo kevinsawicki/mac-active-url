@@ -20,5 +20,5 @@ trusted. This will show a pop-up confirm dialog if the process is not trusted:
 
 ```js
 var alreadyTrusted = require('mac-active-url').prompt()
-console.log('Previous trusted', alreadyTrusted)
+console.log('Previously trusted?', alreadyTrusted)
 ```
